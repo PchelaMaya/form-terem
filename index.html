@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" 
+        crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <form id="form" class="px-4 py-3" method='GET' action='form.php' onsubmit=' sendForm(event); return false; '>
+        <div class="mb-3">
+            <label for="DropdownFormEmail" class="form-label">Адрес электронной почты*</label>
+            <input type="email" name="email" class="form-control" id="DropdownFormEmail" placeholder="email@sobaka.com">
+        </div>
+        <div class="mb-3">
+            <label for="DropdownFormPassword" class="form-label">Пароль*</label>
+            <input type="password" name="password" class="form-control" id="DropdownFormPassword" placeholder="Пароль">
+        </div>
+        <div class="dropdown dropdown-surpise mb-3">
+            <select name="surpise" class="form-select">
+                <option selected>Выберите подарок за регистрацию</option>
+                <option value="1">Iphone 14Pro Max</option>
+                <option value="2">Квартира</option>
+                <option value="3">BMW X5</option>
+                <option value="4">Щенок Корги</option>
+                <option value="5">Шоколадка</option>
+            </select>
+        </div>
+        <div class="dropdown dropdown-sity mb-3">
+            <select name="sity" class="form-select">
+                <option selected>Город проживания</option>
+                <option value="1">Москва</option>
+                <option value="2">Санкт Петербург</option>
+                <option value="3">Новосибирск</option>
+                <option value="4">Ростов</option>
+                <option value="5">Екатеринбург</option>
+            </select>
+        </div>
+        <div class="dropdown dropdown-street mb-3">
+            <select name="street" class="form-select">
+                <option selected>Улица</option>
+                <option value="1">Проспект Ленина</option>
+                <option value="2">Проспект Сталина</option>
+                <option value="3">Большая Почтовая</option>
+                <option value="4">Арбатская</option>
+                <option value="5">Волжская</option>
+            </select>
+        </div>
+        <div class="dropdown dropdown-house mb-3">
+            <select name="house" class="form-select">
+                <option selected>Номер дома</option>
+                <option value="1">1</option>
+                <option value="2">1а</option>
+                <option value="3">2</option>
+                <option value="4">3</option>
+                <option value="5">4</option>
+            </select>
+        </div>
+        <div class="dropdown dropdown-room mb-3">
+            <select name="room" class="form-select">
+                <option selected>Номер квартиры</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+          <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+ 
+    <script src="./js/main.js"></script>
+</body>
+</html>
